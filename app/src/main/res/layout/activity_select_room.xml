@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="12dp"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgHotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder" />
+
+                <!-- ✅ Amenities overlay -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#99000000"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <!-- Gym -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@android:drawable/ic_menu_compass"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Gym"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:ellipsize="none"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <!-- Free Parking -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@android:drawable/ic_menu_mylocation"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Free Parking"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:ellipsize="none"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <!-- Restaurant -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@android:drawable/ic_menu_sort_by_size"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Restaurant"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:ellipsize="none"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 🔹 Below here your entire layout remains same -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvHotelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fairfield Hotel, Agra"
+                    android:textColor="#2196F3"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="⭐⭐⭐⭐ 4.3"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="About the hotel"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Our hotel is located in Ashok Cosmos Mall in Sanjay Place, one of the largest shopping malls in the city."
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Amenities available"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/amenitiesContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:flexWrap="wrap"
+                    app:justifyContent="center"
+                    app:alignItems="center"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="#E3F2FD"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Property Rules &amp; Information"
+                            android:textColor="#2196F3"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="◦ Check-in: 12.00 Pm, Check-out: 11.00 Am"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="◦ Pets are not allowed"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="◦ Outside food is not allowed"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="◦ Passport, Aadhar, and Govt. ID are accepted as ID proofs."
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Select Room(s)"
+                    android:textColor="#2196F3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/layoutRooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/layoutBottomBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00BCD4"
+                    android:elevation="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvSummary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2 Rooms | 2 Days | Rs. 29,996"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnCheckout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/white"
+                        android:text="Checkout"
+                        android:textAllCaps="false"
+                        android:textColor="#00BCD4"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_nav_bg"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="3dp"
+                android:src="@drawable/baseline_home_24"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Where2Go -->
+        <LinearLayout
+            android:id="@+id/navWhere2Go"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="3dp"
+                android:src="@drawable/outline_location_on_24"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where2Go"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

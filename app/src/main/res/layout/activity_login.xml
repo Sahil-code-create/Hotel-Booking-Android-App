@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".LoginActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Card Container -->
+    <LinearLayout
+        android:id="@+id/cardContainerLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="16dp"
+        android:elevation="6dp"
+        android:clipToOutline="true"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black"
+                android:drawableStart="@drawable/outline_mark_email_unread_24"
+                android:drawablePadding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@android:color/black"
+                android:drawableStart="@drawable/baseline_password_24"
+                android:drawablePadding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/teal_700"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:padding="12dp"/>
+
+        <!-- Navigate to Signup -->
+        <TextView
+            android:id="@+id/tvGoToSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

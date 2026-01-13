@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutBottomBar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Hotel Details Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgHotelCheckout"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder"
+                        app:cornerFamily="rounded"
+                        app:cornerSize="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCheckoutHotelName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fairfield Hotel, Agra"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCheckoutDates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="12 Nov - 14 Nov | 2 Days"
+                            android:textColor="#666666"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvCheckoutRooms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="2 Rooms"
+                            android:textColor="#666666"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Guest Details Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guest Details"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Name"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvGuestName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="John Doe"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvGuestEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="john@example.com"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Phone"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvGuestPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91 9876543210"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Selected Rooms -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Rooms"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutSelectedRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical" />
+
+            <!-- Price Breakdown -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price Breakdown"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Room Charges"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvRoomCharges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹29,996"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Taxes and Fees"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvTaxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹3,599"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="12dp"
+                        android:background="#E0E0E0" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total Amount"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹33,595"
+                            android:textColor="#00BCD4"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Payment Method -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Method"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <RadioButton
+                            android:id="@+id/rbPayAtHotel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:padding="8dp"
+                            android:text="Pay at Hotel"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbOnline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:text="Pay Online (Credit/Debit Card, UPI)"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Confirm Booking Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/layoutBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNavBar"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvBottomTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹33,595"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirmBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/button_selected_bg"
+            android:paddingHorizontal="32dp"
+            android:text="Confirm Booking"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_nav_bg"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="3dp"
+                android:src="@drawable/baseline_home_24"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Where2Go -->
+        <LinearLayout
+            android:id="@+id/navWhere2Go"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="3dp"
+                android:src="@drawable/outline_location_on_24"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where2Go"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

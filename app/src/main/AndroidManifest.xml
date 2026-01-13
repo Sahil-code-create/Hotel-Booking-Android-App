@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hotel"
+        tools:targetApi="31">
+
+        <!-- SMS Receivers -->
+        <receiver android:name=".SmsSentReceiver" />
+        <receiver android:name=".SmsDeliveredReceiver" />
+
+        <!-- Splash screen (the launcher activity) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Signup screen -->
+        <activity
+            android:name=".Signup"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel"
+            tools:ignore="MissingClass" />
+
+        <!-- Login screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel"
+            tools:ignore="MissingClass" />
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Hotel" />
+
+        <activity
+            android:name=".HotelListActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel" />
+
+        <activity
+            android:name=".SearchResultsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel" />
+
+        <activity
+            android:name=".SelectRoomActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel" />
+
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel" />
+
+        <activity
+            android:name=".PlacesActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel" />
+
+        <activity
+            android:name=".PlaceDetailsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel" />
+
+        <!-- Find Room page -->
+        <activity
+            android:name=".FindRoomActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Hotel"
+            tools:ignore="MissingClass" />
+
+    </application>
+</manifest>

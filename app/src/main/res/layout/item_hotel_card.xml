@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/hotel_card_bg"
+    android:padding="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/hotelImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/hotelName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Hotel Name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hotelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sold Out"
+            android:padding="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:background="@drawable/price_soldout_bg"
+            android:layout_marginStart="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

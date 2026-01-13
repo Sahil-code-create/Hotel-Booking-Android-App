@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42A5F5">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="App Logo"
+        android:src="@drawable/booknest_logo" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_centerHorizontal="true"
+        android:text="BookNest"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:text="Your perfect hotel booking app"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp" />
+
+</RelativeLayout>

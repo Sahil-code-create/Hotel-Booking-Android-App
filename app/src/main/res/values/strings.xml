@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">BookNest</string>
+
+    <!-- ────────────── AGRA ────────────── -->
+    <string name="agra_info">
+Agra, situated on the banks of the Yamuna River in Uttar Pradesh, is one of India’s most visited heritage destinations. It was the glorious capital of the Mughal Empire and continues to mesmerize travelers with its magnificent monuments and rich culture.
+
+🏛 Historical Sites:
+• Taj Mahal – The marble masterpiece built by Emperor Shah Jahan for his beloved Mumtaz Mahal.
+• Agra Fort – A red-sandstone fortress that served as the royal residence of the Mughal emperors.
+• Fatehpur Sikri – A perfectly preserved ghost city, 40 km away, that showcases Mughal architecture at its finest.
+
+🌳 Gardens and Views:
+• Mehtab Bagh – A beautiful riverside garden offering the best sunset view of the Taj Mahal.
+• Ram Bagh – One of India’s oldest Mughal gardens.
+
+🍴 Food and Markets:
+Agra is famous for its Mughlai cuisine—try kebabs, biryani, and the sweet delicacy *petha*.
+The Sadar Bazaar and Kinari Bazaar are known for marble inlay work, leather goods, and handicrafts.
+
+🧭 Nearby Getaways:
+Mathura and Vrindavan, the birthplace of Lord Krishna, are just an hour’s drive away.
+</string>
+
+    <!-- ────────────── BENGALURU ────────────── -->
+    <string name="bengaluru_info">
+Bengaluru, the capital of Karnataka, is India’s tech hub and the “Garden City” celebrated for its greenery, pleasant weather, and vibrant cosmopolitan life.
+
+🏛 Heritage and Architecture:
+• Bangalore Palace – Inspired by Windsor Castle, it reflects Tudor-style architecture.
+• Tipu Sultan’s Summer Palace – A teakwood marvel showcasing Indo-Islamic design.
+
+🌳 Parks and Nature:
+• Lalbagh Botanical Garden – Spread across 240 acres with rare tropical plants.
+• Cubbon Park – The city’s green lung area surrounded by museums and colonial buildings.
+• Nandi Hills – A popular sunrise point located about 60 km from the city.
+
+🎭 Culture and Lifestyle:
+Bengaluru has a thriving art and music scene with spaces like Rangashankara and National Gallery of Modern Art.
+Microbreweries, cafes, and live-music pubs define its youthful spirit.
+
+🍴 Food and Shopping:
+Taste authentic South-Indian breakfast at iconic joints like MTR and Vidyarthi Bhavan.
+For shopping, visit Commercial Street, MG Road, and Brigade Road.
+
+🧭 Weekend Getaways:
+Mysuru, Coorg, Chikmagalur, and Sakleshpur are scenic hill and coffee-estate retreats nearby.
+</string>
+
+    <!-- ────────────── CHENNAI ────────────── -->
+    <string name="chennai_info">
+Chennai, the capital of Tamil Nadu, beautifully balances modern city life with ancient Tamil heritage. Located on the Coromandel Coast, it offers serene beaches and rich Dravidian architecture.
+
+🏖 Beaches:
+• Marina Beach – The world’s second-longest urban beach, ideal for morning walks.
+• Elliot’s Beach (Besant Nagar) – Popular among youth for cafes and sea breeze.
+
+🏛 Temples and Heritage:
+• Kapaleeshwarar Temple – A 7th-century marvel dedicated to Lord Shiva.
+• Parthasarathy Temple – One of Chennai’s oldest, dedicated to Lord Krishna.
+• Fort St. George – The first British fortress in India, now a museum.
+
+🎭 Arts and Festivals:
+Chennai hosts the December Music Season showcasing Carnatic concerts and Bharatanatyam dance.
+Cultural hubs like Kalakshetra keep classical traditions alive.
+
+🍴 Cuisine:
+Savor dosa, idli, filter coffee, Chettinad chicken, and seafood on the Marina.
+Try authentic Tamil thali meals at local messes and restaurants.
+
+🧭 Nearby Getaways:
+Mahabalipuram, Pondicherry, and Kanchipuram make excellent day trips.
+</string>
+
+    <!-- ────────────── DELHI ────────────── -->
+    <string name="delhi_info">
+Delhi, the national capital, blends Mughal grandeur with modern dynamism. It is both a historical treasure chest and a bustling metropolis.
+
+🏛 Heritage and Monuments:
+• Red Fort – A UNESCO World Heritage site and symbol of India’s sovereignty.
+• Qutub Minar – The world’s tallest brick minaret.
+• Humayun’s Tomb – The architectural inspiration for the Taj Mahal.
+• India Gate – The war memorial that lights up beautifully at night.
+
+🌿 Spiritual and Modern Landmarks:
+• Lotus Temple – Known for its flower-like architecture and tranquility.
+• Akshardham Temple – A modern marvel of art, devotion, and technology.
+• Gurudwara Bangla Sahib – A serene Sikh place of worship open to all.
+
+🍴 Food and Markets:
+Relish parathas at Chandni Chowk, kebabs at Karim’s, and street chaat at Connaught Place.
+For shopping, visit Dilli Haat, Sarojini Nagar, or Khan Market.
+
+🎭 Culture and Events:
+Delhi hosts numerous festivals—Republic Day Parade, Qutub Festival, Book Fair, and International Trade Fair.
+
+🧭 Day Trips:
+Agra, Jaipur, and Mathura are within a few hours’ drive, forming the famous Golden Triangle.
+</string>
+
+    <!-- ────────────── MUMBAI ────────────── -->
+    <string name="mumbai_info">
+Mumbai, the capital of Maharashtra, is the “City of Dreams” — India’s financial, commercial, and cinematic heart.
+
+🏖 Landmarks and Attractions:
+• Gateway of India – The iconic basalt arch facing the Arabian Sea.
+• Marine Drive – The Queen’s Necklace that glows along the coastline.
+• Bandra-Worli Sea Link – A modern engineering marvel.
+• Elephanta Caves – Ancient rock-cut temples dedicated to Lord Shiva.
+
+🏛 Heritage and Architecture:
+• Chhatrapati Shivaji Maharaj Terminus – UNESCO World Heritage railway station.
+• The Taj Mahal Palace Hotel – A blend of Indo-Saracenic and Victorian elegance.
+• Kala Ghoda Art District – A hub for galleries, cafes, and annual art festival.
+
+🍴 Food and Nightlife:
+Street food defines Mumbai: vada pav, pav bhaji, sev puri, and Bombay sandwich.
+The city never sleeps—explore pubs, rooftop lounges, and sea-view restaurants.
+
+🛍 Markets and Culture:
+• Colaba Causeway – Great for souvenirs and accessories.
+• Linking Road &amp; Hill Road (Bandra) – Trendy fashion streets.
+• Dharavi Leather Market – Affordable leather products.
+
+🧭 Nearby Getaways:
+Lonavala, Khandala, Alibaug, and Matheran offer refreshing escapes from the city bustle.
+</string>
+
+</resources>
